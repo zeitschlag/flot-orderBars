@@ -101,13 +101,13 @@
 
         function findOthersBarsToReOrders(series){
             var retSeries = new Array();
-            var orderValuesSeen = "";
+            var orderValuesSeen = new Array();
 
             for(var i = 0; i < series.length; i++){
                 if(series[i].bars.order != null && series[i].bars.show &&
-                    orderValuesSeen.indexOf(series[i].bars.order) < 0){
+                    $.inArray(series[i].bars.order, orderValuesSeen) < 0){
 
-                    orderValuesSeen += series[i].bars.order;
+                    orderValuesSeen.push(series[i].bars.order);
                     retSeries.push(series[i]);
                 }
             }
