@@ -3,6 +3,7 @@
  *
  * Released under the MIT license by Benjamin BUFFET, 20-Sep-2010.
  * Modifications made by Steven Hall <github.com/emmerich>, 01-May-2013.
+ * More modifications made by Nathan <github.com/zeitschlag>, 11-Feb-2014
  *
  * This plugin is an alpha version.
  *
